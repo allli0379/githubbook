@@ -1,0 +1,153 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroBanner from '../components/HeroBanner.astro';
+import TrendingCard from '../components/TrendingCard.astro';
+import { getTrendingData, getRecentPosts } from '../lib/data';
+
+const trending = await getTrendingData();
+const top6 = trending.slice(0, 6);
+const posts = await getRecentPosts(3);
+---
+
+<BaseLayout
+  title="GitHub热点追踪 | 每日AI与开源项目趋势分析"
+  description="每天从GitHub Trending精选10个最热开源项目，深度解读AI与前沿技术趋势。帮助开发者发现下一个改变世界的项目。"
+>
+  <!-- Hero -->
+  <HeroBanner />
+
+  <!-- Today's Hot Repos -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="flex items-end justify-between mb-8">
+      <div>
+        <h2 class="section-title">今日 GitHub 热点</h2>
+        <p class="section-subtitle">实时追踪最受开发者关注的开源项目</p>
+      </div>
+      <a href="/githubbook/trending/"
+         class="hidden sm:flex items-center gap-1 text-brand-primary hover:text-brand-accent text-sm font-medium transition-colors">
+        查看全部
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+
+    {top6.length > 0 ? (
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {top6.map((repo, i) => (
+          <TrendingCard repo={repo} rank={i + 1} index={i} />
+        ))}
+      </div>
+    ) : (
+      <div class="glass-card p-12 text-center">
+        <div class="text-4xl mb-4">🚀</div>
+        <h3 class="text-white text-lg font-semibold mb-2">数据加载中...</h3>
+        <p class="text-github-muted">请先运行 <code class="text-brand-primary">npm run fetch-trending</code> 获取最新数据</p>
+      </div>
+    )}
+
+    <div class="mt-6 text-center sm:hidden">
+      <a href="/githubbook/trending/" class="btn-outline inline-flex items-center gap-2">
+        查看全部 10 个项目
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- Recent Blog Posts -->
+  {posts.length > 0 && (
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16 border-t border-github-border/30">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="section-title">最新解读</h2>
+          <p class="section-subtitle">AI 辅助深度分析每日热点项目</p>
+        </div>
+        <a href="/githubbook/trending/"
+           class="hidden sm:flex items-center gap-1 text-brand-primary hover:text-brand-accent text-sm font-medium transition-colors">
+          全部文章
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {posts.map((post, i) => (
+          <a href={`/githubbook/trending/${post.slug}/`}
+             class={`glass-card p-6 card-hover animate-fade-in-up opacity-0 stagger-${i + 1} group`}>
+            <div class="flex items-center gap-2 mb-3">
+              <span class="tag tag-hot text-[10px]">热门解读</span>
+              <span class="text-github-muted text-xs">{post.date}</span>
+            </div>
+            <h3 class="text-white font-semibold text-lg mb-2 group-hover:text-brand-primary transition-colors line-clamp-2">
+              {post.title}
+            </h3>
+            <p class="text-github-muted text-sm line-clamp-2 mb-4">{post.description}</p>
+            <div class="flex flex-wrap gap-1.5">
+              {post.tags?.slice(0, 3).map((tag: string) => (
+                <span class="tag tag-lang text-[10px]">{tag}</span>
+              ))}
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Features Section -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16 border-t border-github-border/30">
+    <div class="text-center mb-12">
+      <h2 class="section-title">为什么关注 GitHubBook？</h2>
+      <p class="section-subtitle">专为开发者打造的技术趋势追踪平台</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {[
+        {
+          icon: '🔍',
+          title: '精准筛选',
+          desc: '每日从数千个项目中精选 Top 10，剔除噪音，只留精华。让你用最少时间掌握最重要的技术动态。',
+        },
+        {
+          icon: '🧠',
+          title: 'AI 深度解读',
+          desc: '不只是搬运项目信息 —— AI 分析技术架构、应用场景、行业影响，帮你理解 WHY 而不只是 WHAT。',
+        },
+        {
+          icon: '📈',
+          title: '趋势洞察',
+          desc: '持续追踪技术风向，从每日热点中发现长期趋势。比别人更早看到下一个大方向。',
+        },
+      ].map((feature, i) => (
+        <div class={`glass-card p-6 animate-fade-in-up opacity-0 stagger-${i + 1}`}>
+          <div class="text-3xl mb-4">{feature.icon}</div>
+          <h3 class="text-white font-semibold text-lg mb-2">{feature.title}</h3>
+          <p class="text-github-muted text-sm leading-relaxed">{feature.desc}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+    <div class="glass-card p-8 md:p-12 text-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-primary/5 via-brand-secondary/5 to-brand-accent/5"></div>
+      <div class="relative">
+        <h2 class="text-2xl md:text-3xl font-display font-bold text-white mb-4">
+          每天 5 分钟，掌握 <span class="gradient-text">技术前沿</span>
+        </h2>
+        <p class="text-github-muted mb-6 max-w-lg mx-auto">
+          收藏本站，每天来看看 GitHub 上又出现了哪些令人兴奋的新项目。
+        </p>
+        <a href="/githubbook/trending/" class="btn-primary inline-flex items-center gap-2">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+          </svg>
+          立即查看今日热点
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

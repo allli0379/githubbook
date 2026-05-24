@@ -1,0 +1,58 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  ogImage?: string;
+  noIndex?: boolean;
+}
+
+const {
+  title,
+  description,
+  ogImage = '/githubbook/og-default.png',
+  noIndex = false,
+} = Astro.props;
+
+const fullTitle = `${title} | GitHubBook`;
+---
+<!-- Primary Meta Tags -->
+<title>{fullTitle}</title>
+<meta name="title" content={fullTitle} />
+<meta name="description" content={description} />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{noIndex && <meta name="robots" content="noindex, nofollow" />}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={new URL(Astro.url.pathname, Astro.site).href} />
+<meta property="og:title" content={fullTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(ogImage, Astro.site).href} />
+<meta property="og:site_name" content="GitHubBook" />
+<meta property="og:locale" content="zh_CN" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={new URL(Astro.url.pathname, Astro.site).href} />
+<meta name="twitter:title" content={fullTitle} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={new URL(ogImage, Astro.site).href} />
+
+<!-- Additional -->
+<link rel="canonical" href={new URL(Astro.url.pathname, Astro.site).href} />
+<meta name="theme-color" content="#0d1117" />
+<meta name="author" content="GitHubBook" />
+
+<!-- Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "GitHubBook",
+  "url": Astro.site,
+  "description": "追踪GitHub每日热点，深度解读AI与开源项目趋势",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": `${Astro.site}/githubbook/search?q={search_term_string}`,
+    "query-input": "required name=search_term_string"
+  }
+})} />

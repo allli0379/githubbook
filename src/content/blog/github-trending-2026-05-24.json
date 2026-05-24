@@ -1,0 +1,112 @@
+{
+  "slug": "github-trending-2026-05-24",
+  "title": "GitHub 热点速览 2026年5月24日星期日",
+  "description": "今日 GitHub 最热门项目精选：**Lum1104/Understand-Anything**、**rohitg00/ai-engineering-from-scratch**、**anthropics/claude-plugins-official** 等 10 个项目。涵盖 TypeScript、Python 等领域。",
+  "date": "2026年5月24日星期日",
+  "tags": [
+    "TypeScript",
+    "Python"
+  ],
+  "content": "\n<h2>📊 今日概览</h2>\n<p>2026年5月24日星期日，GitHub Trending 呈现出丰富多彩的技术生态。从 **Lum1104/Understand-Anything**、**rohitg00/ai-engineering-from-scratch**、**anthropics/claude-plugins-official** 等热门项目来看，开源社区正围绕 <strong>AI 应用落地</strong>、<strong>开发者工具链</strong> 和 <strong>基础设施优化</strong> 三大方向快速演进。</p>\n\n<h2>🏆 Top 10 项目详情</h2>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">🥇</span>\n    <a href=\"https://github.com/Lum1104/Understand-Anything\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      Lum1104/<strong>Understand-Anything</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 TypeScript</span>\n    <span>⭐ 3987 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">🥈</span>\n    <a href=\"https://github.com/rohitg00/ai-engineering-from-scratch\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      rohitg00/<strong>ai-engineering-from-scratch</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">Learn it. Build it. Ship it for others.</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 Python</span>\n    <span>⭐ 1836 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">🥉</span>\n    <a href=\"https://github.com/anthropics/claude-plugins-official\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      anthropics/<strong>claude-plugins-official</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">Official, Anthropic-managed directory of high quality Claude Code Plugins.</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 Python</span>\n    <span>⭐ 1179 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">📌</span>\n    <a href=\"https://github.com/anthropics/knowledge-work-plugins\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      anthropics/<strong>knowledge-work-plugins</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 Python</span>\n    <span>⭐ 486 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">📌</span>\n    <a href=\"https://github.com/multica-ai/andrej-karpathy-skills\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      multica-ai/<strong>andrej-karpathy-skills</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    \n    <span>⭐ 2555 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">📌</span>\n    <a href=\"https://github.com/earendil-works/pi\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      earendil-works/<strong>pi</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 TypeScript</span>\n    <span>⭐ 444 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">📌</span>\n    <a href=\"https://github.com/Alishahryar1/free-claude-code\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      Alishahryar1/<strong>free-claude-code</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 Python</span>\n    <span>⭐ 565 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">📌</span>\n    <a href=\"https://github.com/colbymchenry/codegraph\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      colbymchenry/<strong>codegraph</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 TypeScript</span>\n    <span>⭐ 2993 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">📌</span>\n    <a href=\"https://github.com/multica-ai/multica\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      multica-ai/<strong>multica</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 TypeScript</span>\n    <span>⭐ 584 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<div class=\"repo-card\" style=\"border: 1px solid #30363d; border-radius: 12px; padding: 20px; margin-bottom: 16px; background: #161b22;\">\n  <div style=\"display: flex; align-items: center; gap: 12px; margin-bottom: 8px;\">\n    <span style=\"font-size: 24px;\">📌</span>\n    <a href=\"https://github.com/shiyu-coder/Kronos\" target=\"_blank\" rel=\"noopener\" style=\"font-size: 18px; font-weight: 600; color: #58a6ff; text-decoration: none;\">\n      shiyu-coder/<strong>Kronos</strong>\n    </a>\n  </div>\n  <p style=\"color: #c9d1d9; margin: 8px 0; line-height: 1.6;\">Kronos: A Foundation Model for the Language of Financial Markets</p>\n  <div style=\"display: flex; gap: 16px; font-size: 13px; color: #8b949e; margin-top: 12px;\">\n    <span>🔧 Python</span>\n    <span>⭐ 96 total</span>\n    <span>🔥 +0 today</span>\n    <span>🍴 0 forks</span>\n  </div>\n  \n</div>\n\n<h2>🔍 趋势洞察</h2>\n<ul>\n  <li><strong>AI 渗透加速</strong>：AI 相关项目持续霸榜，从模型训练到推理部署，从 Prompt 工程到 Agent 框架，AI 正在重塑整个技术栈。</li>\n  <li><strong>开发者体验优先</strong>：多款开发者工具上榜，社区对「开发效率」和「工具链整合」的关注度持续升温。</li>\n  <li><strong>开源生态繁荣</strong>：从大厂开源到独立开发者作品，开源社区的创新活力不减，每天都有令人兴奋的新项目涌现。</li>\n</ul>\n\n<h2>💡 值得关注的方向</h2>\n<p>今天的榜单反映出几个值得长期关注的技术方向：</p>\n<ol>\n  <li><strong>AI Agent & 工具链</strong>：Agent 框架和 AI 编程工具持续火热，这将是未来 1-2 年的核心主题。</li>\n  <li><strong>云原生 & 基础设施</strong>：容器、Serverless、Edge Computing 相关项目稳步增长。</li>\n  <li><strong>前端 & 全栈框架</strong>：新一代前端工具链和全栈框架竞争激烈，开发者选择更加多样化。</li>\n</ol>\n\n<hr style=\"border-color: #30363d; margin: 24px 0;\" />\n<p style=\"color: #8b949e; font-size: 14px;\">\n  <em>本文由 GitHubBook 自动生成，数据来源为 GitHub Trending。如有疑问或建议，欢迎\n  <a href=\"https://github.com/allli0379/githubbook/issues\" style=\"color: #58a6ff;\">提交 Issue</a>。</em>\n</p>",
+  "repos": [
+    {
+      "owner": "Lum1104",
+      "name": "Understand-Anything",
+      "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+      "url": "https://github.com/Lum1104/Understand-Anything",
+      "language": "TypeScript",
+      "stars": "3987",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "rohitg00",
+      "name": "ai-engineering-from-scratch",
+      "description": "Learn it. Build it. Ship it for others.",
+      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "language": "Python",
+      "stars": "1836",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "anthropics",
+      "name": "claude-plugins-official",
+      "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "language": "Python",
+      "stars": "1179",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "anthropics",
+      "name": "knowledge-work-plugins",
+      "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+      "url": "https://github.com/anthropics/knowledge-work-plugins",
+      "language": "Python",
+      "stars": "486",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "multica-ai",
+      "name": "andrej-karpathy-skills",
+      "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+      "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+      "stars": "2555",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "earendil-works",
+      "name": "pi",
+      "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+      "url": "https://github.com/earendil-works/pi",
+      "language": "TypeScript",
+      "stars": "444",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "Alishahryar1",
+      "name": "free-claude-code",
+      "description": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "language": "Python",
+      "stars": "565",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "colbymchenry",
+      "name": "codegraph",
+      "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+      "url": "https://github.com/colbymchenry/codegraph",
+      "language": "TypeScript",
+      "stars": "2993",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "multica-ai",
+      "name": "multica",
+      "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+      "url": "https://github.com/multica-ai/multica",
+      "language": "TypeScript",
+      "stars": "584",
+      "starsToday": "0",
+      "forks": "0"
+    },
+    {
+      "owner": "shiyu-coder",
+      "name": "Kronos",
+      "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+      "url": "https://github.com/shiyu-coder/Kronos",
+      "language": "Python",
+      "stars": "96",
+      "starsToday": "0",
+      "forks": "0"
+    }
+  ]
+}

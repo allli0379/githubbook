@@ -1,0 +1,101 @@
+[
+  {
+    "owner": "Lum1104",
+    "name": "Understand-Anything",
+    "description": "Graphs that teach > graphs that impress. Turn any code into an interactive knowledge graph you can explore, search, and ask questions about. Works with Claude Code, Codex, Cursor, Copilot, Gemini CLI, and more.",
+    "url": "https://github.com/Lum1104/Understand-Anything",
+    "language": "TypeScript",
+    "stars": "3987",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "rohitg00",
+    "name": "ai-engineering-from-scratch",
+    "description": "Learn it. Build it. Ship it for others.",
+    "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+    "language": "Python",
+    "stars": "1836",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "anthropics",
+    "name": "claude-plugins-official",
+    "description": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+    "url": "https://github.com/anthropics/claude-plugins-official",
+    "language": "Python",
+    "stars": "1179",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "anthropics",
+    "name": "knowledge-work-plugins",
+    "description": "Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork",
+    "url": "https://github.com/anthropics/knowledge-work-plugins",
+    "language": "Python",
+    "stars": "486",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "multica-ai",
+    "name": "andrej-karpathy-skills",
+    "description": "A single CLAUDE.md file to improve Claude Code behavior, derived from Andrej Karpathy's observations on LLM coding pitfalls.",
+    "url": "https://github.com/multica-ai/andrej-karpathy-skills",
+    "stars": "2555",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "earendil-works",
+    "name": "pi",
+    "description": "AI agent toolkit: coding agent CLI, unified LLM API, TUI & web UI libraries, Slack bot, vLLM pods",
+    "url": "https://github.com/earendil-works/pi",
+    "language": "TypeScript",
+    "stars": "444",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "Alishahryar1",
+    "name": "free-claude-code",
+    "description": "Use claude-code for free in the terminal, VSCode extension or discord like OpenClaw (voice supported)",
+    "url": "https://github.com/Alishahryar1/free-claude-code",
+    "language": "Python",
+    "stars": "565",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "colbymchenry",
+    "name": "codegraph",
+    "description": "Pre-indexed code knowledge graph for Claude Code, Codex, Cursor, OpenCode, and Hermes Agent — fewer tokens, fewer tool calls, 100% local",
+    "url": "https://github.com/colbymchenry/codegraph",
+    "language": "TypeScript",
+    "stars": "2993",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "multica-ai",
+    "name": "multica",
+    "description": "The open-source managed agents platform. Turn coding agents into real teammates — assign tasks, track progress, compound skills.",
+    "url": "https://github.com/multica-ai/multica",
+    "language": "TypeScript",
+    "stars": "584",
+    "starsToday": "0",
+    "forks": "0"
+  },
+  {
+    "owner": "shiyu-coder",
+    "name": "Kronos",
+    "description": "Kronos: A Foundation Model for the Language of Financial Markets",
+    "url": "https://github.com/shiyu-coder/Kronos",
+    "language": "Python",
+    "stars": "96",
+    "starsToday": "0",
+    "forks": "0"
+  }
+]

@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getPostBySlug, getRecentPosts } from '../../lib/data';
+
+export async function getStaticPaths() {
+  const posts = await getRecentPosts(50);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+
+const formattedDate = post.date;
+---
+
+<BaseLayout
+  title={`${post.title} | GitHub热点解读`}
+  description={post.description}
+>
+  <article class="max-w-4xl mx-auto px-4 sm:px-6 pt-12 pb-16">
+    <!-- Back link -->
+    <a href="/githubbook/trending/"
+       class="inline-flex items-center gap-1 text-github-muted hover:text-brand-primary text-sm mb-8 transition-colors">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      返回热点列表
+    </a>
+
+    <!-- Header -->
+    <header class="mb-8">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="tag tag-hot">热门解读</span>
+        <span class="text-github-muted text-sm">{formattedDate}</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-display font-bold text-white leading-tight mb-4">
+        {post.title}
+      </h1>
+      <p class="text-github-muted text-lg leading-relaxed">{post.description}</p>
+      <div class="flex flex-wrap gap-2 mt-4">
+        {post.tags?.map((tag: string) => (
+          <span class="tag tag-ai">{tag}</span>
+        ))}
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div class="glass-card p-6 md:p-10">
+      <div class="prose prose-invert max-w-none
+                  prose-headings:text-white prose-headings:font-display
+                  prose-a:text-brand-primary prose-a:no-underline hover:prose-a:text-brand-accent
+                  prose-code:text-brand-primary prose-code:bg-github-bg prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                  prose-pre:bg-github-bg prose-pre:border prose-pre:border-github-border
+                  prose-img:rounded-xl prose-img:shadow-lg
+                  prose-li:text-github-text
+                  prose-strong:text-white">
+        {post.content ? (
+          <Fragment set:html={post.content} />
+        ) : (
+          <div class="text-center py-12">
+            <div class="text-4xl mb-4">📝</div>
+            <p class="text-github-muted">文章内容正在生成中...</p>
+          </div>
+        )}
+      </div>
+    </div>
+
+    <!-- Tags & Share -->
+    <div class="mt-8 flex flex-wrap items-center justify-between gap-4">
+      <div class="flex flex-wrap gap-2">
+        {post.tags?.map((tag: string) => (
+          <span class="tag tag-lang">{tag}</span>
+        ))}
+      </div>
+      <div class="flex items-center gap-2">
+        <span class="text-github-muted text-sm">分享到:</span>
+        <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(new URL(Astro.url.pathname, Astro.site).href)}`}
+           target="_blank" rel="noopener"
+           class="p-2 text-github-muted hover:text-white transition-colors" aria-label="Share on Twitter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+      </div>
+    </div>
+  </article>
+</BaseLayout>

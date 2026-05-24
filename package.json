@@ -1,0 +1,25 @@
+{
+  "name": "githubbook",
+  "version": "1.0.0",
+  "description": "GitHub热点追踪 - 每日AI与开源项目趋势分析",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/generate-sitemap.js",
+    "preview": "astro preview",
+    "fetch-trending": "node scripts/fetch-trending.js",
+    "postbuild": "node scripts/generate-sitemap.js",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.0",
+    "@astrojs/sitemap": "^3.0.0",
+    "@astrojs/tailwind": "^5.0.0",
+    "astro": "^4.0.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="404 页面未找到"
+  description="抱歉，您访问的页面不存在。"
+  noIndex={true}
+>
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-24 text-center">
+    <div class="text-8xl font-display font-extrabold gradient-text mb-6">404</div>
+    <h1 class="text-2xl font-bold text-white mb-4">页面不存在</h1>
+    <p class="text-github-muted mb-8 max-w-md mx-auto">
+      你访问的页面可能已被移除、链接失效，或者你输入了错误的地址。
+    </p>
+    <div class="flex items-center justify-center gap-4">
+      <a href="/githubbook/" class="btn-primary">返回首页</a>
+      <a href="/githubbook/trending/" class="btn-outline">查看热点</a>
+    </div>
+  </section>
+</BaseLayout>

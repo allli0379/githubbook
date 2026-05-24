@@ -1,0 +1,54 @@
+---
+const navItems = [
+  { label: '首页', href: '/githubbook/' },
+  { label: 'GitHub热点', href: '/githubbook/trending/' },
+  { label: 'AI学堂', href: '/githubbook/ai-school/' },
+];
+const currentPath = Astro.url.pathname;
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-github-bg/80 backdrop-blur-xl border-b border-github-border/50">
+  <nav class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <!-- Logo -->
+    <a href="/githubbook/" class="flex items-center gap-2.5 group">
+      <div class="w-9 h-9 bg-gradient-to-br from-brand-primary to-brand-secondary rounded-lg
+                  flex items-center justify-center text-white font-bold text-sm
+                  group-hover:shadow-lg group-hover:shadow-brand-primary/30 transition-all duration-300">
+        GB
+      </div>
+      <div class="hidden sm:block">
+        <div class="text-white font-display font-bold text-lg leading-tight">
+          GitHub<span class="gradient-text">Book</span>
+        </div>
+        <div class="text-github-muted text-[10px] leading-tight">热点追踪 · 深度解读</div>
+      </div>
+    </a>
+
+    <!-- Nav Links -->
+    <div class="flex items-center gap-1">
+      {navItems.map((item) => {
+        const isActive = currentPath === item.href ||
+          (item.href !== '/githubbook/' && currentPath.startsWith(item.href));
+        return (
+          <a
+            href={item.href}
+            class={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200
+              ${isActive
+                ? 'bg-github-card text-white shadow-sm border border-github-border/50'
+                : 'text-github-muted hover:text-white hover:bg-github-card/50'
+              }`}
+          >
+            {item.label}
+          </a>
+        );
+      })}
+    </div>
+
+    <!-- Mobile menu button placeholder -->
+    <button class="sm:hidden p-2 text-github-muted hover:text-white" aria-label="Menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+</header>

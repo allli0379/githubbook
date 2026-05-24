@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;900&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+@layer base {
+  * { box-sizing: border-box; }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-github-bg text-github-text font-sans antialiased;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(0, 102, 255, 0.08), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(108, 92, 231, 0.05), transparent);
+    background-attachment: fixed;
+  }
+
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #0d1117; }
+  ::-webkit-scrollbar-thumb { background: #30363d; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #484f58; }
+
+  ::selection {
+    @apply bg-brand-primary/30 text-white;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-github-card/80 backdrop-blur-xl border border-github-border/50
+           rounded-2xl shadow-lg hover:border-github-border hover:shadow-xl
+           transition-all duration-300;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-primary via-brand-accent to-brand-secondary
+           bg-clip-text text-transparent;
+  }
+
+  .gradient-text-warm {
+    @apply bg-gradient-to-r from-brand-warm via-orange-400 to-yellow-400
+           bg-clip-text text-transparent;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-gradient-to-r from-brand-primary to-brand-secondary
+           text-white font-semibold rounded-xl
+           hover:shadow-lg hover:shadow-brand-primary/25
+           transition-all duration-300 hover:-translate-y-0.5
+           active:translate-y-0;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border border-github-border text-github-text font-semibold
+           rounded-xl hover:border-brand-primary hover:text-brand-primary
+           transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-xl;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-display font-bold text-white mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-github-muted text-lg mb-8;
+  }
+
+  .tag {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .tag-lang {
+    @apply bg-github-bg border border-github-border text-github-muted;
+  }
+
+  .tag-hot {
+    @apply bg-gradient-to-r from-brand-warm/20 to-orange-500/20
+           text-orange-400 border border-orange-500/30;
+  }
+
+  .tag-ai {
+    @apply bg-gradient-to-r from-purple-500/20 to-brand-primary/20
+           text-purple-400 border border-purple-500/30;
+  }
+
+  .sparkle {
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 0.3; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradientShift 3s ease infinite;
+  }
+
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+}
